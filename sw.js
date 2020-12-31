@@ -5,7 +5,8 @@ const cacheName = 'cache-v1';
 const resourcesToPrecache = [
 	'/',
 	'index.html',
-	'styles/main.css'
+	'styles/main.css',
+	'images/icon-192x192.png'
 ];
 
 //Install event handler - called during registration
