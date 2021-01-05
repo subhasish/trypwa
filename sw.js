@@ -3,9 +3,6 @@
 //Cache files
 const cacheName = 'cache-v1';
 const resourcesToPrecache = [
-	'/',
-	'index.html',
-	'styles/main.css',
 	'images/icon-192x192.png'
 ];
 

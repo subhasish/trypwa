@@ -5,7 +5,8 @@
   <title>Wisdom</title>
   <link rel="manifest" href="/manifest.json">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
 
@@ -31,19 +32,21 @@
   </div>
   
   <div class="footer">
-    <button type="button" class="next-button">
-		<span> Next </span>
-		<svg version="1.1" viewBox="0.0 0.0 100.0 100.0" height="32" width="32" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-			<clipPath id="p.0">
-				<path d="m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z" clip-rule="nonzero"/>
-			</clipPath>
-			<g clip-path="url(#p.0)">
-				<path fill="#000000" fill-opacity="0.0" d="m0 0l100.0 0l0 100.0l-100.0 0z" fill-rule="evenodd"/>
-				<path fill="#cfe2f3" d="m24.078741 37.081364l25.921259 0l0 -14.70866l25.921257 29.417324l-25.921257 29.417324l0 -14.708664l-25.921259 0z" fill-rule="evenodd"/>
-				<path stroke="#3c78d8" stroke-width="4.0" stroke-linejoin="round" stroke-linecap="butt" d="m24.078741 37.081364l25.921259 0l0 -14.70866l25.921257 29.417324l-25.921257 29.417324l0 -14.708664l-25.921259 0z" fill-rule="evenodd"/>
-			</g>
-		</svg>
-	</button>
+	<div class="footer-width">
+		<button type="button" class="footer-button">
+			<span class="button-text"> Next </span>
+			<svg version="1.1" viewBox="0.0 0.0 100.0 100.0" height="32" width="32" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+				<clipPath id="p.0">
+					<path d="m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z" clip-rule="nonzero"/>
+				</clipPath>
+				<g clip-path="url(#p.0)">
+					<path fill="#000000" fill-opacity="0.0" d="m0 0l100.0 0l0 100.0l-100.0 0z" fill-rule="evenodd"/>
+					<path d="m24.078741 37.081364l25.921259 0l0 -14.70866l25.921257 29.417324l-25.921257 29.417324l0 -14.708664l-25.921259 0z" fill-rule="evenodd"/>
+					<path stroke="royalblue" stroke-width="4.0" stroke-linejoin="round" stroke-linecap="butt" d="m24.078741 37.081364l25.921259 0l0 -14.70866l25.921257 29.417324l-25.921257 29.417324l0 -14.708664l-25.921259 0z" fill-rule="evenodd"/>
+				</g>
+			</svg>
+		</button>
+	</div>
   </div>
 
   <script src="scripts/main.js" async></script>
