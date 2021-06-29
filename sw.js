@@ -18,7 +18,7 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-	console.log('Activate event!');
+	console.log('Inside activate event!');
 });
 
 self.addEventListener('fetch', event => {
@@ -28,3 +28,16 @@ self.addEventListener('fetch', event => {
 	);
 });
 
+self.addEventListener('push', event => {
+	const title = 'Yay a new message';
+	const body = 'We have received a new message.';
+	const icon = '/images/icon-192x192.png';
+	const tag = 'simple-push-example-tag';
+	event.waitUntil(
+		self.registration.showNotification(title, {
+			body: body,
+			icon: icon,
+			tag: tag
+		})
+	);
+});
